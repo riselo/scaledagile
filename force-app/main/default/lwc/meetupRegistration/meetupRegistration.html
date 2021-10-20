@@ -1,0 +1,11 @@
+<template>
+	<lightning-card title="Register for a Meetup" icon-name="custom:custom14">
+		<div class="slds-var-m-around_medium">
+            <lightning-input label="Meetup" disabled value={meetupName}></lightning-input>
+            <lightning-input type="text" name="firstName" label="First Name" onchange={updateFirstName} value = {firstName} class="slds-m-bottom_x-small"></lightning-input>
+            <lightning-input type="text" name="lastName" label="Last Name" onchange={updateLastName} value = {lastName} class="slds-m-bottom_x-small"></lightning-input>
+            <lightning-input type="email" name="email" label="Email" onchange={updateEmail} value = {email} class="slds-m-bottom_x-small"></lightning-input>
+            <lightning-button label="Register" disabled={buttonDisabled} variant="brand" onclick={register}></lightning-button>
+		</div>
+	</lightning-card>
+</template>
